@@ -1,33 +1,24 @@
-//public class Main {
- //   public static void main(String[] args)
-   // {
-     //   System.out.println("Hello world!");
-    //}
-//}
-
-//public class Main {
-//    public static void main(String[] args)
-//    {
-//        int i_val;
-//        System.out.println("i_val" +i_val);
-//    }
-//}
-
-//Odd and Even number
-import java.util.*;
-public class Main {
+import java.util.Scanner;
+public class Main
+{
     public static void main(String[] args)
     {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the number : ");
-        int a = sc.nextInt();
-        if(a % 2 == 0)
-        {
-            System.out.println("The number is even");
+//        System.out.println("Curicity is the starting for greate Adventure");
+        String answer;
+        do {
+            Scanner sc = new Scanner(System.in);
+            System.out.println("Enter The Quantity");
+            int quantity = sc.nextInt();
+            System.out.println("Enter The Price");
+            double price = sc.nextFloat();
+            double total = quantity * price;
+            System.out.println("Total is " + total);
+            System.out.println();
+            System.out.println("Do you want to add another item? (Y/N)");
+            answer = sc.next();
         }
-        else {
-            System.out.println("The number is odd");
-        }
+        while (answer.equalsIgnoreCase("Y"));
+
+
     }
 }
-
